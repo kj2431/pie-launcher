@@ -13,7 +13,9 @@ LLMs.
 
 > Package: `com.kj2431.pielauncher` · minSdk 26 · targetSdk 35 · Kotlin
 
-![Pie Launcher screenshot](screenshot.jpg)
+<p align="center">
+  <img src="screenshot.jpg" width="300" alt="Pie Launcher screenshot">
+</p>
 
 ## Inspiration
 
