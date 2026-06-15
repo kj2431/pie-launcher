@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default selection for the "Position" multi-select: Left AND Right -->
+    <string-array name="default_edges">
+        <item>left</item>
+        <item>right</item>
+    </string-array>
+</resources>

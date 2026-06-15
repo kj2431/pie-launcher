@@ -1,0 +1,16 @@
+<resources>
+    <style name="Theme.PieLauncher" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar" />
+
+    <!-- Pure-black surfaces for AMOLED dark mode (applied as an overlay). -->
+    <style name="ThemeOverlay.PieLauncher.Amoled" parent="">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="colorSurface">@android:color/black</item>
+        <item name="colorSurfaceDim">@android:color/black</item>
+        <item name="colorSurfaceBright">@android:color/black</item>
+        <item name="colorSurfaceContainerLowest">@android:color/black</item>
+        <item name="colorSurfaceContainerLow">@android:color/black</item>
+        <item name="colorSurfaceContainer">@android:color/black</item>
+        <item name="colorSurfaceContainerHigh">@android:color/black</item>
+        <item name="colorSurfaceContainerHighest">@android:color/black</item>
+    </style>
+</resources>

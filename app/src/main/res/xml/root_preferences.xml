@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/cat_appearance" app:iconSpaceReserved="false">
+        <ListPreference
+            app:key="pref_theme"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_theme_title"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="system"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/cat_activation" app:iconSpaceReserved="false">
+
+        <MultiSelectListPreference
+            app:key="pref_edges"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_edges_title"
+            app:summary="@string/pref_edges_summary"
+            app:entries="@array/edge_entries"
+            app:entryValues="@array/edge_values"
+            app:defaultValue="@array/default_edges" />
+
+        <!-- Center point of the activation area along the edge -->
+        <SeekBarPreference
+            app:key="pref_center_pct"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_center_title"
+            android:max="100"
+            app:min="0"
+            app:seekBarIncrement="1"
+            app:showSeekBarValue="true"
+            app:defaultValue="50" />
+
+        <SeekBarPreference
+            app:key="pref_thickness"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_thickness_title"
+            android:max="120"
+            app:min="8"
+            app:seekBarIncrement="1"
+            app:showSeekBarValue="true"
+            app:defaultValue="30" />
+
+        <SwitchPreferenceCompat
+            app:key="pref_show_bars"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_show_bars_title"
+            app:summary="@string/pref_show_bars_summary"
+            app:defaultValue="false" />
+
+        <SeekBarPreference
+            app:key="pref_length_pct"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_length_title"
+            android:max="100"
+            app:min="5"
+            app:seekBarIncrement="1"
+            app:showSeekBarValue="true"
+            app:defaultValue="60" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/cat_pie" app:iconSpaceReserved="false">
+        <Preference
+            app:key="pref_configure_pie"
+            app:iconSpaceReserved="false"
+            app:title="@string/configure_pie"
+            app:summary="@string/pref_configure_summary">
+            <intent
+                android:targetPackage="com.kj2431.pielauncher"
+                android:targetClass="com.kj2431.pielauncher.SliceConfigActivity" />
+        </Preference>
+
+        <ListPreference
+            app:key="pref_label_mode"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_label_title"
+            app:entries="@array/label_entries"
+            app:entryValues="@array/label_values"
+            app:defaultValue="both"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_pie_bg_color"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_bg_color_title"
+            app:summary="@string/pref_bg_color_summary"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:defaultValue="system"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_pie_color"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_primary_color_title"
+            app:summary="@string/pref_primary_color_summary"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:defaultValue="system"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_pie_long_color"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_long_color_title"
+            app:summary="@string/pref_long_color_summary"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:defaultValue="system"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="pref_below_keyboard"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_below_kb_title"
+            app:summary="@string/pref_below_kb_summary"
+            app:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/cat_timing" app:iconSpaceReserved="false">
+        <SeekBarPreference
+            app:key="pref_response_ms"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_response_title"
+            android:max="800"
+            app:min="0"
+            app:seekBarIncrement="10"
+            app:showSeekBarValue="true"
+            app:defaultValue="0" />
+        <SeekBarPreference
+            app:key="pref_anim_ms"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_anim_title"
+            android:max="600"
+            app:min="0"
+            app:seekBarIncrement="10"
+            app:showSeekBarValue="true"
+            app:defaultValue="150" />
+        <SeekBarPreference
+            app:key="pref_longpress_ms"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_longpress_title"
+            android:max="1200"
+            app:min="100"
+            app:seekBarIncrement="10"
+            app:showSeekBarValue="true"
+            app:defaultValue="400" />
+        <SeekBarPreference
+            app:key="pref_haptic_ms"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_haptic_title"
+            android:max="100"
+            app:min="0"
+            app:seekBarIncrement="1"
+            app:showSeekBarValue="true"
+            app:defaultValue="10" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/cat_behavior" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:key="pref_root_actions"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_root_title"
+            app:summary="@string/pref_root_summary"
+            app:defaultValue="false" />
+
+        <Preference
+            app:key="pref_accessibility"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_accessibility_title"
+            app:summary="@string/pref_accessibility_summary">
+            <intent android:action="android.settings.ACCESSIBILITY_SETTINGS" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
