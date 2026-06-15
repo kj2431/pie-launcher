@@ -1,6 +1,7 @@
 # Pie Launcher
 
 [![Android 8-16](https://img.shields.io/badge/Android-8--16-3DDC84?logo=android&logoColor=white)](app/build.gradle.kts)
+[![Release](https://img.shields.io/badge/Release-latest-brightgreen?logo=github&logoColor=white)](https://github.com/kj2431/pie-launcher/releases/tag/Releases)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Donate PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=HC9A86GXJZ58S&no_recurring=0&currency_code=USD)
 [![Donate ETH](https://img.shields.io/badge/Donate-ETH-627EEA?logo=ethereum&logoColor=white)](https://etherscan.io/address/0xea115154408b1a3939678adf5a5ab5b8b15dcb11)
